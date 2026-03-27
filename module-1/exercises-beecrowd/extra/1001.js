@@ -1,31 +1,9 @@
-/*
-Read 2 variables, named A and B and make the sum of these two variables, assigning its result to the variable X. Print X as shown below. Print endline after the result otherwise you will get “Presentation Error”.
+var input = require('fs').readFileSync('./dev/stdin', 'utf8');
+var lines = input.split('\n');
 
-Input
-The input file will contain 2 integer numbers.
+let A = Number(lines[0]);
+let B = Number(lines[1]);
 
-Output
-Print the letter X (uppercase) with a blank space before and after the equal signal followed by the value of X, according to the following example.
+let X = A + B;
 
-Obs.: don't forget the endline after all.
-
-Samples Input	
-
-Samples Output
-----------------------------
-10
-9
-
-X = 19
-----------------------------
--10
-4
-
-X = -6
-----------------------------
-15
--7
-
-X = 8
-*/
-
+console.log(`X = ${X}`);
