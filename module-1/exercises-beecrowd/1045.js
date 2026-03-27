@@ -19,6 +19,42 @@ if (C > A) {
 
 // not necessary to order B and C to verify the types
 
+/* TEACHER'S SOLUTION:
+let n1 = Number(lines[0]);
+let n2 = Number(lines[1]);
+let n3 = Number(lines[2]);
+
+if (n1>=n2 && n1>=n3) {
+    A = n1;
+    if (n2>n3) {
+        B = n2;
+        C = n3;
+    } else {
+        B = n3;
+        C = n2;
+    }
+} else if (n2>=n1 && n2>=n3) {
+    A = n2;
+    if (n1>n3) {
+        B = n1;
+        C = n3;
+    } else {
+        B = n3;
+        C = n1;
+    }
+} else if (n3>=n1 && n3>=n2) {
+    A = n3;
+    if (n1>n2) {
+        B = n1;
+        C = n2;
+    } else {
+        B = n2;
+        C = n1;
+    }
+}
+
+*/
+
 // triangle types:
 
 if (A >= (B+C)) {
