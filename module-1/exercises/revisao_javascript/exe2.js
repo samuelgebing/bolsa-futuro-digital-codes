@@ -22,4 +22,4 @@ function calcularIdade(dataNascimento) {
     return idade;
 }
 
-console.log(calcularIdade("16/11/2000")); // Retorna 24
+console.log(calcularIdade("16/11/2000")); // Retorna 25
