@@ -1,0 +1,2 @@
+### Endpoint GET /api/produtos
+GET http://localhost:3000/api/produtos
