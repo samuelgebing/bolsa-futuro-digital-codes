@@ -1,0 +1,10 @@
+@base = http://localhost:3000
+
+### Juros compostos - exemplo base
+GET {{base}}/juros?capital=1000&taxa=0.01&meses=12
+
+### Outro teste - 6 meses
+GET {{base}}/juros?capital=500&taxa=0.02&meses=6
+
+### Outro teste - taxa maior
+GET {{base}}/juros?capital=2000&taxa=0.05&meses=3

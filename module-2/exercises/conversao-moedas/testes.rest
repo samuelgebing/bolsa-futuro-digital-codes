@@ -1,0 +1,22 @@
+@base = http://localhost:3000
+
+### Rota inicial
+GET {{base}}/
+
+### Conversão para Dólar (100 reais)
+GET {{base}}/conversao?valor=100&moeda=USD
+
+### Conversão para Euro (50 reais)
+GET {{base}}/conversao?valor=50&moeda=EUR
+
+### Conversão para Libra (200 reais)
+GET {{base}}/conversao?valor=200&moeda=GBP
+
+### Erro: moeda não suportada
+GET {{base}}/conversao?valor=100&moeda=ARS
+
+### Erro: valor ausente
+GET {{base}}/conversao?moeda=USD
+
+### Erro: valor inválido
+GET {{base}}/conversao?valor=abc&moeda=USD
